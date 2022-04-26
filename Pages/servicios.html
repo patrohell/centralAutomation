@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
     <link rel="icon" type="Images/x-icon" href="../Images/logo_small_icon_only.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
 
 </head>
@@ -26,7 +27,8 @@
             </nav>
         </div>
 
-        <img class="servicios__imagenUno" src="../Images/bms.jpg" alt="Sistemas bms">
+        <img data-aos="fade-up" data-aos-duration="1500" class="servicios__imagenUno" src="../Images/bms.jpg"
+            alt="Sistemas bms">
         <div class="servicios__grupo">
             <h2 class="servicios__title__serv">BMS Gestion de Edificios</h2>
             <p class="servicios__texto__serv">Los BMS (Building Management System) son sistemas
@@ -41,7 +43,8 @@
                 por sus responsables.</p>
         </div>
 
-        <img class="servicios__imagenDos" src="../Images/industrial-pc.jpg" alt="Control Industrial">
+        <img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="servicios__imagenDos"
+            src="../Images/industrial-pc.jpg" alt="Control Industrial">
         <div class="servicios__grupo2">
             <h2 class="servicios__title__serv">Sistema de control Industrial</h2>
             <p class="servicios__texto__serv2">El control industrial es la aplicación de diferentes tecnologías
@@ -53,7 +56,8 @@
                 tecnologías que permiten la automatización y control de procesos industriales, la producción no genera
                 errores de ningún tipo y no se detiene en ningún momento.</p>
         </div>
-        <img class="servicios__imagenTres" src="../Images/ingenieria.jpg" alt="Ingenieria y consultoria">
+        <img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="servicios__imagenTres"
+            src="../Images/ingenieria.jpg" alt="Ingenieria y consultoria">
         <div class="servicios__grupo3">
             <h2 class="servicios__title__serv">Ingenieria y consultoria</h2>
             <p class="servicios__texto__serv3">Valoracion del proyecto o la idea que se quiere desarrollar o
@@ -66,7 +70,8 @@
                 sólo técnica sino también que cumpla la diversidad de normativa existente hoy en día. Que sea una
                 solución con un componente ambiental, y también económica y viable.</p>
         </div>
-        <img class="servicios__imagenCuatro" src="../Images/scada.jpg" alt="Sistemas SCADA">
+        <img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="servicios__imagenCuatro"
+            src="../Images/scada.jpg" alt="Sistemas SCADA">
         <div class="servicios__grupo4">
             <h2 class="servicios__title__serv">Sistemas SCADA</h2>
             <p class="servicios__texto__serv4">El control de supervisión y la adquisición de datos (SCADA) es una
@@ -94,12 +99,14 @@
                     <div class="footer__titulo">Seguinos</div>
                     <div class="redesSociales__icono">
                         <a class="redesSociales__item" href="https://www.youtube.com" target="blank"><img
-                                src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube" width="50"
-                                height="50"></a>
+                                src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube"
+                                width="50" height="50"></a>
                         <a class="redesSociales__item" href="https://www.instagram.com" target="blank"><img
+                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 src="../Images/Instagram-black-and-white-logo-Premium-vector-PNG-.png" alt="instagram"
                                 width="50" height="50"></a>
                         <a class="redesSociales__item" href="https://www.twitter.com" target="blank"><img
+                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
                                 src="../Images/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="50"
                                 height="50"></a>
                     </div>
@@ -122,6 +129,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

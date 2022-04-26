@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
     <link rel="icon" type="Images/x-icon" href="../Images/logo_small_icon_only.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
@@ -25,7 +26,8 @@
             </nav>
         </div>
 
-        <img class="noticia_img1" src="../Images/Noticia/ces.jpg" alt="ces2021">
+        <img data-aos="flip-left" data-aos-duration="1500" class="noticia_img1" src="../Images/Noticia/ces.jpg"
+            alt="ces2021">
         <div class="noticia_text text1">
             <h2>Participacion en CES 2021</h2>
             <p>Este año regresó de forma presencial el CES 2022 a Las Vegas, la feria tecnológica más importante que
@@ -37,7 +39,8 @@
                 acuerdo con el sitio del CES.</p>
         </div>
 
-        <img class="noticia_img2" src="../Images/Noticia/nuevosprod.jpg" alt="nuevos productos">
+        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="700" class="noticia_img2"
+            src="../Images/Noticia/nuevosprod.jpg" alt="nuevos productos">
         <div class="noticia_text text2">
             <h2>Nuevos Productos</h2>
             <p>El pasado 5 y 6 de Septiembre, en el marco del CATAAR 2022 realizamos el lanzamiento de la nueva línea de
@@ -57,7 +60,8 @@
                 de productos.</p>
         </div>
 
-        <img class="noticia_img3" src="../Images/Noticia/planta.jpg" alt="planta industrial">
+        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600" class="noticia_img3"
+            src="../Images/Noticia/planta.jpg" alt="planta industrial">
         <div class="noticia_text text3">
             <h2>Inauguramos planta</h2>
             <p>Nuestra nueva planta nos permite ampliar los servicios que podemos ofrecer a nuestros clientes,
@@ -74,7 +78,8 @@
         </div>
 
 
-        <img class="noticia_img4" src="../Images/Noticia/reguladores.jpg" alt="reguladores">
+        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600" class="noticia_img4"
+            src="../Images/Noticia/reguladores.jpg" alt="reguladores">
         <div class="noticia_text text4">
             <h2>Mejoramiento de laboratorios</h2>
             <p>Como parte del desarrollo electrónico que nos caracteriza, en el 2017 ampliamos nuestra línea de
@@ -88,16 +93,6 @@
                 grandes picos de voltajes, también cuenta con medición de voltaje True RMS asegurando que solo se regule
                 o corte el voltaje cuando es realmente necesario . </p>
         </div>
-
-
-
-
-
-
-
-
-
-
 
         <footer class="footer">
             <div class="footer__main">
@@ -116,12 +111,14 @@
                     <div class="footer__titulo">Seguinos</div>
                     <div class="redesSociales__icono">
                         <a class="redesSociales__item" href="https://www.youtube.com" target="blank"><img
-                                src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube" width="50"
-                                height="50"></a>
+                                src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube"
+                                width="50" height="50"></a>
                         <a class="redesSociales__item" href="https://www.instagram.com" target="blank"><img
+                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 src="../Images/Instagram-black-and-white-logo-Premium-vector-PNG-.png" alt="instagram"
                                 width="50" height="50"></a>
                         <a class="redesSociales__item" href="https://www.twitter.com" target="blank"><img
+                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
                                 src="../Images/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="50"
                                 height="50"></a>
                     </div>
@@ -144,6 +141,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
