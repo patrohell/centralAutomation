@@ -1,6 +1,6 @@
 <!-- Desarrolllado por: Patricio Siguenza
     patrohell@gmail.com  
-    26/04/2022 -->
+    28/04/2022 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -13,37 +13,50 @@
     <link rel="icon" type="Images/x-icon" href="Images/logo_small_icon_only.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="contenedor__header">
-            <header class="header__logo">
-                <img src="Images/logo_small_icon.png" alt="Central Automation" width="70" height="70">
+    <div class="container-fluid wrapper">
+        <div class="row">
+            <header class="col-lg-5 mt-4 ms-4">
+                <img src="../Images/logo_small_icon.png" alt="Central Automation" width="70" height="70">
             </header>
-            <nav class="header__navegacion">
-                <a class="navegacion__items" href="index.html">Inicio</a>
-                <a class="navegacion__items" href="Pages/servicios.html">Servicios</a>
-                <a class="navegacion__items" href="Pages/productos.html">Productos</a>
-                <a class="navegacion__items" href="Pages/noticias.html">Noticias</a>
-                <a class="navegacion__items" href="Pages/contacto.html">Contacto</a>
+            <nav class="col-lg-6 mt-5 ms-4   nav nav-tabs header__navegacion">
+                <li class="nav-item px-3 fs-1 text-decoration-none">
+                    <a class="nav-link  " aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3 fs-1 text-decoration-none">
+                    <a class="nav-link " href="Pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item px-3 fs-1 text-decoration-none">
+                    <a class="nav-link " href="Pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item px-3 fs-1 text-decoration-none">
+                    <a class="nav-link " href="Pages/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item px-3 fs-1 text-decoration-none">
+                    <a class="nav-link " href="Pages/contacto.html">Contacto</a>
+                </li>
             </nav>
         </div>
 
-        <main class="contenedor__principal">
+        <main class="row contenedor__principal">
             <div class="principal__parallax imagenUno">
                 <div class="parallax__texto">
                     <h1>Central Automation</h1>
                 </div>
                 <!-- Aqui quiero poner un slider, por el momento pongo una imagen -->
             </div>
-            <div class="servicios__titulo">
+            <div class="row col-lg-1 col-xs-1 servicios__titulo">
                 <h2>Servicios</h2>
             </div>
-            <div class="principal__servicios">
+            <div class="col-lg-12 principal__servicios">
                 <article class="servicios_card serv1">
-                    <img data-aos="flip-down" data-aos-duration="2000" class="servicios_card__portada" src="Images/bms.jpg" alt="Sistemas bms">
+                    <img data-aos="flip-down" data-aos-duration="2000" class="img-fluid img-thumbnail servicios_card__portada"
+                        src="Images/bms.jpg" alt="Sistemas bms">
                     <h3 class="servicios_card__titulo">BMS Gestion de Edificios</h3>
                     <h4 class="servicios_card__texto">Los BMS (Building Management System) son sistemas
                         electronicos/informáticos que controlan,y automatizan los elementos mecánicos, eléctricos y
@@ -55,8 +68,8 @@
                 </article>
 
                 <article class="servicios_card serv2">
-                    <img data-aos="flip-down" data-aos-delay="500" data-aos-duration="2000" class="servicios_card__portada"
-                        src="Images/industrial-pc.jpg" alt="Control Industrial">
+                    <img data-aos="flip-down" data-aos-delay="500" data-aos-duration="2000"
+                        class="img-fluid img-thumbnail servicios_card__portada" src="Images/industrial-pc.jpg" alt="Control Industrial">
                     <h3 class="servicios_card__titulo">Sistema de control Industrial</h3>
                     <h4 class="servicios_card__texto">El control industrial es la aplicación de diferentes tecnologías
                         para
@@ -67,7 +80,8 @@
                     <a href="Pages/servicios.html" class="servicios__boton">Ver mas</a>
                 </article>
                 <article class="servicios_card serv3">
-                    <img data-aos="flip-down" data-aos-delay="1000" data-aos-duration="2000" class="servicios_card__portada" src="Images/ingenieria.jpg" alt="Ingenieria y consultoria">
+                    <img data-aos="flip-down" data-aos-delay="1000" data-aos-duration="2000"
+                        class="img-fluid img-thumbnail servicios_card__portada" src="Images/ingenieria.jpg" alt="Ingenieria y consultoria">
                     <h3 class="servicios_card__titulo">Ingenieria y consultoria</h3>
                     <h4 class="servicios_card__texto">Valoracion del proyecto o la idea que se quiere desarrollar o
                         reconducir. Esta tarea incluye, por supuesto, un análisis de la propia compañía, de su
@@ -79,7 +93,8 @@
                 </article>
 
                 <article class="servicios_card serv4">
-                    <img data-aos="flip-down" data-aos-delay="1500" data-aos-duration="2000" class="servicios_card__portada" src="Images/scada.jpg" alt="Sistemas SCADA">
+                    <img data-aos="flip-down" data-aos-delay="1500" data-aos-duration="2000"
+                        class="img-fluid img-thumbnail servicios_card__portada" src="Images/scada.jpg" alt="Sistemas SCADA">
                     <h3 class="servicios_card__titulo">Sistemas SCADA</h3>
                     <h4 class="servicios_card__texto">El control de supervisión y la adquisición de datos (SCADA) es una
                         arquitectura de sistema de control que utiliza computadoras, comunicaciones de datos en red e
@@ -96,7 +111,7 @@
                 </div>
             </div>
         </main>
-        <div class="innovacion">
+        <div class="col-lg-12 innovacion">
             <article class="innovacion__card innova1">
                 <img data-aos="zoom-in" data-aos-duration="2000" class="innovacion__card__portada"
                     src="Images/clientes.jpg" alt="Nuestros clientes">
@@ -129,55 +144,66 @@
                     equipo.</h4>
             </article>
         </div>
-        <footer class="footer">
-            <div class="footer__main">
-                <div class="footer__menuPrincipal">
-                    <div class="footer__titulo">Menu principal</div>
-                    <nav class="footer__navegacion">
-                        <a class="footer__items" href="index.html">Inicio</a>
-                        <a class="footer__items" href="Pages/servicios.html">Servicios</a>
-                        <a class="footer__items" href="Pages/productos.html">Productos</a>
-                        <a class="footer__items" href="Pages/noticias.html">Noticias</a>
-                        <a class="footer__items" href="Pages/contacto.html">Contacto</a>
-                    </nav>
-                </div>
+        <div class="row">
+            <footer class="col-lg-12 footer">
+                <div class="footer__main">
+                    <div class="footer__menuPrincipal">
+                        <div class="footer__titulo">Menu principal</div>
+                        <nav class="footer__navegacion">
+                            <a class="footer__items" href="index.html">Inicio</a>
+                            <a class="footer__items" href="Pages/servicios.html">Servicios</a>
+                            <a class="footer__items" href="Pages/productos.html">Productos</a>
+                            <a class="footer__items" href="Pages/noticias.html">Noticias</a>
+                            <a class="footer__items" href="Pages/contacto.html">Contacto</a>
+                        </nav>
+                    </div>
 
-                <div class="footer__redesSociales">
-                    <div class="footer__titulo">Seguinos</div>
-                    <div class="redesSociales__icono">
-                        <a class="redesSociales__item" href="https://www.youtube.com" target="blank"><img data-aos="fade-left" data-aos-duration="500" 
-                                src="Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube" width="50"
-                                height="50"></a>
-                        <a class="redesSociales__item" href="https://www.instagram.com" target="blank"><img data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
-                                src="Images/Instagram-black-and-white-logo-Premium-vector-PNG-.png" alt="instagram"
-                                width="50" height="50"></a> 
-                        <a class="redesSociales__item" href="https://www.twitter.com" target="blank"><img data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
-                                src="Images/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="50"
-                                height="50"></a>
+                    <div class="footer__redesSociales">
+                        <div class="footer__titulo">Seguinos</div>
+                        <div class="redesSociales__icono">
+                            <a class="redesSociales__item" href="https://www.youtube.com" target="blank"><img
+                                    data-aos="fade-left" data-aos-duration="500"
+                                    src="Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube"
+                                    width="50" height="50"></a>
+                            <a class="redesSociales__item" href="https://www.instagram.com" target="blank"><img
+                                    data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
+                                    src="Images/Instagram-black-and-white-logo-Premium-vector-PNG-.png" alt="instagram"
+                                    width="50" height="50"></a>
+                            <a class="redesSociales__item" href="https://www.twitter.com" target="blank"><img
+                                    data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
+                                    src="Images/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="50"
+                                    height="50"></a>
+                        </div>
+                    </div>
+                    <div class="footer__contacto">
+                        <div class="footer__titulo">Contacto</div>
+                        <div class="footer__ContactoItmes">
+                            <a class="contacto__item" href="https://goo.gl/maps/4XaPi1iSt2YmeXwE9" target="blank">📌
+                                Tomas
+                                Ordonez 327
+                                Cuenca-Ecuador</a>
+                            <div class="contacto__item">📞+59358792726</div>
+                            <a class="contacto__item" href="mailto:info@central-automation.com">📧
+                                info@central-automation.com</a>
+                        </div>
                     </div>
                 </div>
-                <div class="footer__contacto">
-                    <div class="footer__titulo">Contacto</div>
-                    <div class="footer__ContactoItmes">
-                        <a class="contacto__item" href="https://goo.gl/maps/4XaPi1iSt2YmeXwE9" target="blank">📌 Tomas
-                            Ordonez 327
-                            Cuenca-Ecuador</a>
-                        <div class="contacto__item">📞+59358792726</div>
-                        <a class="contacto__item" href="mailto:info@central-automation.com">📧
-                            info@central-automation.com</a>
-                    </div>
+                <div class="footer__separador"></div>
+                <div class="footer__powered">
+                    &copy powered by: <a href="https://www.edggarstudio.com" target="blank">edggarstudio.com</a>
                 </div>
-            </div>
-            <div class="footer__separador"></div>
-            <div class="footer__powered">
-                &copy powered by: <a href="https://www.edggarstudio.com" target="blank">edggarstudio.com</a>
-            </div>
-        </footer>
+            </footer>
+        </div>
+
     </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
-
 </html>
+
