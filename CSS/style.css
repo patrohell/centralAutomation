@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +9,11 @@
 
 html {
     font-size: 62.5%;
-
-
 }
 
 .wrapper {
     background-color: #1d262d;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     display: grid;
     grid-template-areas: "header"
         "servicios"
@@ -30,37 +30,56 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
 
 }
 
 .header__logo {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+
+.header__logo h2 {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.2rem;
     position: relative;
-    left: 2%;
+
+}
+
+.header__logo span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #1d262d;
+    animation: maquina 1.8s linear;
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+
 }
 
 .header__navegacion {
-    position: relative;
-    right: 2%;
-    border: solid;
-    border-color: #ffdb00;
-    border-width: 2px;
-    border-radius: 15px;
+    margin-right: 5%;
     padding-top: 5px;
     padding-bottom: 5px;
 
 }
 
-.navegacion__items {
+.header__navegacion a {
     text-align: center;
     padding-right: 15px;
     padding-left: 15px;
     text-decoration: none;
     font-size: 2.5rem;
-}
 
-.principal__servicios a:hover{
-    
 }
 
 
@@ -95,7 +114,6 @@ html {
     border-radius: 15px;
     color: rgba(255, 250, 250, 0.7);
     font-size: 1.2rem;
-
 }
 
 .contenedor__principal {
@@ -103,17 +121,12 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.body_contain {
-    display: flex;
-    flex-direction: column;
-}
 
 
 .principal__servicios {
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -171,15 +184,17 @@ html {
     border-top-right-radius: 15px;
 }
 
-.servicios_card__titulo {
+article h3:first-of-type {
     margin-top: 10px;
     text-align: center;
     color: rgba(255, 219, 0, 0.6);
     font-size: 1.7rem;
+
 }
 
 
-.servicios_card__texto {
+
+article h4:first-of-type {
     text-align: justify;
     margin-top: 10px;
     height: 220px;
@@ -188,7 +203,7 @@ html {
     line-height: 1.5;
 }
 
-.servicios__boton {
+article a:first-of-type {
     text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
@@ -284,9 +299,8 @@ a:hover {
     background-image: linear-gradient(black, #1d262d);
     margin-top: 120px;
     padding-bottom: 60px;
-
-
 }
+
 
 .footer__main {
     display: flex;
@@ -294,6 +308,9 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+
 
 .footer__menuPrincipal {
     display: flex;
@@ -315,7 +332,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    justify-content: center;
+    align-items: center;
 }
+
+
+#currentLink__footer {
+    background-color: rgba(0, 139, 139, 0.3);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 
 .footer__items {
     text-align: left;
@@ -358,7 +385,6 @@ a:hover {
     direction: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 
@@ -426,7 +452,6 @@ a:hover {
 .servicios__title__serv {
     width: 90%;
     text-align: center;
-    text-align: center;
     color: rgba(255, 219, 0, 0.6);
     font-size: 1.9rem;
     margin-bottom: 10px;
@@ -446,6 +471,7 @@ a:hover {
     border-top-right-radius: 15px;
 
 }
+
 
 .servicios__texto__serv {
     margin-right: 55px;
@@ -779,340 +805,651 @@ a:hover {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width: 360px) {
-    html {
-        font-size: calc(0.55 * 62.5%);
-    }
-
-    .header__navegacion {
-        right: 0%;
-        margin-top: 7px;
-    }
-
-    .navegacion__items {
-        padding-right: 5px;
-        padding-left: 5px;
+@media screen and (max-width: 992px) {
+    .contenedor__principal {
+        max-width: 992px;
     }
 
     .contenedor__header {
-        flex-direction: column;
         justify-content: stretch;
-        align-items: center;
-        justify-content: center;
-        height: 120px;
     }
 
-    .principal__parallax {
-        background-size: cover;
-
-
+    .header__navegacion a {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 2.1rem;
     }
 
-    .imagenUno {
-        background-image: url("../Images/automation2.jpg");
-        width: 90%;
-
-    }
-
-    .imagenDos {
-        width: 90%;
-    }
-
-
-
-
-    .principal__servicios {
-        display: grid;
-        grid-template-areas: "serv1"
-            "serv2"
-            "serv3"
-            "serv4";
-        width: 90%;
-        overflow: hidden;
-    }
-
-    .servicios_card__portada {
-        width: 90%;
-    }
-
-    .servicios_card {
-        padding: 10px;
-    }
-
-
-
-    .servicios_card__texto {
-        height: auto;
-        width: 90%;
-        font-size: 2.5rem;
-    }
-
-    .servicios__boton {
-        font-size: 2.5rem;
-    }
-
-    .servicios_card__titulo {
-        font-size: 2.7rem;
-    }
-
-    .parallax__texto {
-        width: 60%;
-        font-size: 1.8rem;
-        left: 20%;
-    }
-
-    .servicios__titulo {
-        font-size: 1.5rem;
-    }
-
-    .servicios__title__serv {
-        font-size: 2.5rem;
+    .header__navegacion {
+        margin-right: 4%;
+        margin-top: 1.1%;
     }
 
     .innovacion {
         display: grid;
-        grid-template-areas: "innova1"
-            "innova2"
-            "innova3"
-            "innova4";
+        grid-template-areas: "innova1 innova2"
+            "innova3 innova4";
 
     }
 
-    .innovacion__card {
-        margin-bottom: 20px;
+
+
+}
+
+
+
+#currentLink {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 139, 139, 0.3);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: calc(0.85 * 62.5%);
     }
 
-    .innovacion__card__portada {
-        width: 70%;
+    .contenedor__header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        margin-top: 20px;
+        gap: 15px;
     }
 
-    .innovacion__card__titulo {
-        margin-top: 10px;
-        font-size: 2.7rem;
+    .header__logo {
+        width: auto;
+    }
+
+    .contenedor__principal {
+        max-width: 768px;
+    }
+
+
+    article h4:first-of-type {
+        height: 180px;
+        color: rgba(255, 250, 250, 0.7);
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .innovacion {
+        display: grid;
+        grid-template-areas: "innova1 innova2"
+            "innova3 innova4";
+
+    }
+
+    article h4:first-of-type {
+        height: auto;
     }
 
     .innovacion__card__texto {
-        height: auto;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
-    .footer__main {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: stretch;
-        align-items: center;
-        margin-bottom: 50px;
-    }
+    /* ----------Proiductos --------------- */
 
-    .footer__titulo {
-        font-size: 3rem;
-    }
-
-    .footer__items {
-        font-size: 2.5rem;
-        margin-top: 5px;
-    }
-
-    .footer__navegacion {
-        margin-top: 12px;
-    }
-
-    .redesSociales__item {
-        align-items: stretch;
-        padding: 0px;
-    }
-
-    .redesSociales__icono {
-        margin-top: 10px;
-    }
-
-    .contacto__item {
-        margin-top: 10px;
-        font-size: 2.3rem;
-    }
-
-    .footer__powered {
-        font-size: 2rem;
-    }
-
-    .footer__separador {
-        margin-left: 26%;
-    }
-
-    .wrapper__servicios {
-        grid-template-areas: "header"
-            "serv1_imag"
-            "serv1_text"
-            "serv2_imag"
-            "serv2_text"
-            "serv3_imag"
-            "serv3_text"
-            "serv4_imag"
-            "serv4_text"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-row-gap: 30px;
-    }
-
-    .servicios__texto__serv {
-        margin-right: 0px;
-        margin-left: 15px;
-        font-size: 2.5rem;
-    }
-
-
-    .servicios__imagenDos {
-        margin-left: 35px;
-    }
-
-    .servicios__texto__serv2 {
-        font-size: 2.5rem;
-        margin-left: 15px;
-        width: 90%;
-    }
-
-
-    .servicios__imagenTres {
-        margin-left: 35px;
-    }
-
-    .servicios__texto__serv3 {
-        margin-right: 0px;
-        margin-left: 15px;
-        font-size: 2.5rem;
-    }
-
-    .servicios__imagenCuatro {
-        margin-left: 35px;
-    }
-
-    .servicios__texto__serv4 {
-        margin-right: 0px;
-        margin-left: 15px;
-        font-size: 2.5rem;
-    }
 
     .wrapper__productos {
-        grid-template-areas: "header"
-            "prod1"
-            "prod2"
-            "prod3"
-            "prod4"
-            "prod5"
-            "prod6"
-            "prod7"
-            "prod8"
-            "prod9"
-            "prod10"
-            "prod11"
-            "prod12"
-            "footer";
-        grid-template-columns: 1fr
-    }
 
-    .producto__titulo {
-        font-size: 2.5rem;
-
-    }
-
-    .producto__costo {
-        font-size: 2.5rem;
-
-    }
-
-    .producto__boton {
-
-        font-size: 2rem;
-
-    }
-
-    .wrapper__noticias {
-        grid-template-areas: "header"
-            "noticia_img1"
-            "text1"
-            "noticia_img2"
-            "text2"
-            "noticia_img3"
-            "text3"
-            "noticia_img4"
-            "text4"
-            "footer"
+        grid-template-areas: "header header header header header"
+            ". prod1 prod2 prod3 ."
+            ". prod4 prod5 prod6 ."
+            ". prod7 prod8 prod9 ."
+            ". prod10 prod11 prod12 ."
+            "footer footer footer footer footer"
         ;
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 30px;
+
+
+        /* --------- Contacto ------- */
+
+
     }
 
-    .noticia_img1 {
-        width: 90%;
-        margin-left: 4%;
-        margin-top: 30px;
-    }
-
-    .noticia_img2 {
-        width: 90%;
-        margin-left: 4%;
-    }
-
-    .noticia_img3 {
-        width: 90%;
-        margin-left: 4%;
-    }
-
-    .noticia_img4 {
-        width: 90%;
-        margin-left: 4%;
-    }
-
-    .noticia_text h2 {
-        font-size: 2.7rem;
-    }
-
-
-    .noticia_text p {
-        font-size: 2.5rem;
-        width: 90%;
-        line-height: 1.5;
-        margin-top: 10px;
-        margin-left: 4%;
-        margin-bottom: 40px;
-    }
-
-
+    /* ----------- Contacto ----------- */
 
     .wrapper__contacto {
-
-        grid-template-areas: "header"
-            "contacto_img"
-            "contacto_form"
-            "map"
-            "footer"
+        grid-template-areas: "header header header header"
+            "contacto_img contacto_img contacto_form contacto_form"
+            "map map map map"
+            "footer footer footer footer"
         ;
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-    }
-
-    .formulario__fieldset label {
-        font-size: 3rem;
-    }
-
-    .formulario__fieldset input {
-        font-size: 3rem;
-    }
-
-    .formulario__fieldset {
-        width: 90%;
-        margin-left: 15px;
 
     }
 
+    .contacto_img {
+        width: 100%;
+        margin-left: 30px;
+
+    }
+
+    /* ------- Noticias -------- */
+
+    .wrapper__noticias {
+        grid-template-areas: "header header header header header header"
+            ". noticia_img1 text1 text1 text1 ."
+            ". noticia_img2 text2 text2 text2 ."
+            ". noticia_img3 text3 text3 text3 ."
+            ". noticia_img4 text4 text4 text4 ."
+            "footer footer footer footer footer footer"
+        ;
+        grid-template-columns: 30px 30% 30% auto auto 30px;
+        grid-row-gap: 80px;
+        align-items: center;
+        justify-content: left;
+    }
 
 
 
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 360px) {
+        html {
+            font-size: calc(0.55 * 62.5%);
+        }
+
+        .contenedor__header {
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+
+        }
+
+        .header__logo {
+            flex-direction: column;
+            width: auto;
+            margin-top: 0;
+            margin-left: 0;
+            gap: 10px;
+        }
+
+        .header__logo h2 {
+            font-size: 3rem;
+
+        }
+
+        .header__navegacion {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            gap: 12px;
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .header__navegacion a {
+            padding: 0;
+            font-size: 2.8rem;
+
+        }
+
+        #currentLink {
+            padding-left: 80px;
+            padding-right: 80px;
+            background-color: rgba(0, 139, 139, 0.3);
+        }
+
+
+
+
+
+        .contenedor__principal {
+            max-width: 360px;
+        }
+
+        .imagenUno {
+            background-image: url("../Images/automation2.jpg");
+            width: 100%;
+
+        }
+
+        .imagenDos {
+            width: 100%;
+        }
+
+        .principal__servicios {
+            display: grid;
+            grid-template-areas: "serv1"
+                "serv2"
+                "serv3"
+                "serv4";
+            width: 90%;
+            overflow: hidden;
+        }
+
+        .servicios_card__portada {
+            width: 90%;
+        }
+
+        .servicios_card {
+            padding: 10px;
+        }
+
+
+
+        article h4:first-of-type {
+            height: auto;
+            width: 90%;
+            font-size: 2.5rem;
+        }
+
+        article a:first-of-type {
+            font-size: 2.5rem;
+        }
+
+        article h3:first-of-type {
+            font-size: 2.7rem;
+        }
+
+        .parallax__texto {
+            width: 60%;
+            font-size: 1.8rem;
+            left: 20%;
+        }
+
+        .servicios__titulo {
+            font-size: 1.5rem;
+        }
+
+        .servicios__title__serv {
+            font-size: 2.5rem;
+        }
+
+        .innovacion {
+            display: grid;
+            grid-template-areas: "innova1"
+                "innova2"
+                "innova3"
+                "innova4";
+
+        }
+
+        .innovacion__card {
+            margin-bottom: 20px;
+        }
+
+        .innovacion__card__portada {
+            width: 70%;
+        }
+
+        .innovacion__card__titulo {
+            margin-top: 10px;
+            font-size: 2.7rem;
+        }
+
+        .innovacion__card__texto {
+            height: auto;
+            font-size: 2.5rem;
+        }
+
+        .footer__main {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+
+        .footer__ContactoItmes {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer__titulo {
+            font-size: 3rem;
+        }
+
+        .footer__items {
+            font-size: 2.5rem;
+            margin-top: 5px;
+        }
+
+        .footer__navegacion {
+            align-items: center;
+            margin-top: 12px;
+            gap: 4px
+        }
+
+        #currentLink__footer {
+            padding-left: 80px;
+            padding-right: 80px;
+            background-color: rgba(0, 139, 139, 0.3);
+        }
+
+        .redesSociales__item {
+            align-items: stretch;
+            padding: 0px;
+        }
+
+        .redesSociales__icono {
+            margin-top: 10px;
+        }
+
+        .contacto__item {
+            font-size: 2.3rem;
+        }
+
+        .footer__powered {
+            font-size: 2.3rem;
+        }
+
+        .footer__separador {
+            margin-left: 26%;
+        }
+
+        /* -------------------------------- */
+        .wrapper__servicios {
+            grid-template-areas: "header"
+                "serv1_imag"
+                "serv1_text"
+                "serv2_imag"
+                "serv2_text"
+                "serv3_imag"
+                "serv3_text"
+                "serv4_imag"
+                "serv4_text"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+            max-width: 360px;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .servicios__imagenUno {
+            margin: auto;
+        }
+
+        .servicios__imagenDos {
+            position: relative;
+            left: 18px;
+            margin: auto;
+        }
+
+        .servicios__imagenTres {
+            position: relative;
+            left: 18px;
+            margin: auto;
+        }
+
+        .servicios__imagenCuatro {
+            position: relative;
+            left: 18px;
+            margin: auto;
+        }
+
+        .servicios__grupo {
+            width: 90%;
+            margin: auto;
+            padding: 0;
+        }
+
+        .servicios__grupo2 {
+            width: 90%;
+            margin: auto;
+            padding: 0;
+
+        }
+
+        .servicios__grupo3 {
+            width: 90%;
+            margin: auto;
+            padding: 0;
+
+        }
+
+        .servicios__grupo4 {
+            width: 90%;
+            margin: auto;
+            padding: 0;
+
+        }
+
+        .servicios__title__serv {
+            font-size: 3rem;
+        }
+
+        .servicios__texto__serv {
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.8;
+        }
+
+        .servicios__texto__serv2 {
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.8;
+
+        }
+
+        .servicios__texto__serv3 {
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.8;
+        }
+
+        .servicios__texto__serv4 {
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.8;
+        }
+
+
+        .servicios__texto__serv {
+            font-size: 2.5rem;
+        }
+
+
+        .servicios__imagenDos {
+            margin-left: 35px;
+        }
+
+        .servicios__texto__serv2 {
+            font-size: 2.5rem;
+            margin-left: 15px;
+            width: 90%;
+        }
+
+
+        .servicios__imagenTres {
+            margin-left: 35px;
+        }
+
+        .servicios__texto__serv3 {
+            margin-right: 0px;
+            margin-left: 15px;
+            font-size: 2.5rem;
+        }
+
+        .servicios__imagenCuatro {
+            margin-left: 35px;
+        }
+
+        .servicios__texto__serv4 {
+            margin-right: 0px;
+            margin-left: 15px;
+            font-size: 2.5rem;
+        }
+
+        /* ------------------------------------ */
+
+        .wrapper__productos {
+            grid-template-areas: "header"
+                "prod1"
+                "prod2"
+                "prod3"
+                "prod4"
+                "prod5"
+                "prod6"
+                "prod7"
+                "prod8"
+                "prod9"
+                "prod10"
+                "prod11"
+                "prod12"
+                "footer";
+            grid-template-columns: 1fr;
+            max-width: 360px;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .producto__titulo {
+            font-size: 2.5rem;
+
+        }
+
+        .producto__costo {
+            font-size: 2.5rem;
+
+        }
+
+        .producto__boton {
+
+            font-size: 2rem;
+
+        }
+
+        /* -----------NOTICIAS ------ */
+
+        .wrapper__noticias {
+            grid-template-areas: "header"
+                "noticia_img1"
+                "text1"
+                "noticia_img2"
+                "text2"
+                "noticia_img3"
+                "text3"
+                "noticia_img4"
+                "text4"
+                "footer"
+            ;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 10px
+        }
+
+        .noticia_img1 {
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .noticia_img2 {
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .noticia_img3 {
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .noticia_img4 {
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .noticia_text h2 {
+            font-size: 2.8rem;
+
+        }
+
+
+        .noticia_text p {
+            position: relative;
+            font-size: 2.5rem;
+            width: 75%;
+            line-height: 1.5;
+            margin-top: 5px;
+            margin-left: 13%;
+        }
+
+        /* ------- Contacto -------------- */
+
+        .wrapper__contacto {
+
+            grid-template-areas: "header"
+                "contacto_img"
+                "contacto_form"
+                "map"
+                "footer"
+            ;
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 50px
+        }
+
+        .contacto_img {
+            width: 78%;
+            margin: auto;
+        }
+
+        .contacto__formulario {
+            margin: auto;
+        }
+
+        .formulario__fieldset label {
+            font-size: 3rem;
+        }
+
+        .formulario__fieldset input {
+            font-size: 3rem;
+        }
+
+        .formulario__fieldset textarea {
+            font-size: 3rem;
+        }
+
+        .formulario__fieldset {
+            width: 90%;
+            margin-left: 15px;
+
+        }
+
+        .mapa {
+            width: 100%;
+        }
+
+
+
+
+
+
+    }
 }

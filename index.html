@@ -1,6 +1,6 @@
 <!-- Desarrolllado por: Patricio Siguenza
     patrohell@gmail.com  
-    26/04/2022 -->
+    02/05/2022 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -21,13 +21,14 @@
         <div class="contenedor__header">
             <header class="header__logo">
                 <img src="Images/logo_small_icon.png" alt="Central Automation" width="70" height="70">
+                <h2>Central Automation<span>&#160;</span></h2>
             </header>
             <nav class="header__navegacion">
-                <a class="navegacion__items" href="index.html">Inicio</a>
-                <a class="navegacion__items" href="Pages/servicios.html">Servicios</a>
-                <a class="navegacion__items" href="Pages/productos.html">Productos</a>
-                <a class="navegacion__items" href="Pages/noticias.html">Noticias</a>
-                <a class="navegacion__items" href="Pages/contacto.html">Contacto</a>
+                <a id="currentLink" href="index.html">Inicio</a>
+                <a href="Pages/servicios.html">Servicios</a>
+                <a href="Pages/productos.html">Productos</a>
+                <a href="Pages/noticias.html">Noticias</a>
+                <a href="Pages/contacto.html">Contacto</a>
             </nav>
         </div>
 
@@ -44,50 +45,50 @@
             <div class="principal__servicios">
                 <article class="servicios_card serv1">
                     <img data-aos="flip-down" data-aos-duration="2000" class="servicios_card__portada" src="Images/bms.jpg" alt="Sistemas bms">
-                    <h3 class="servicios_card__titulo">BMS Gestion de Edificios</h3>
-                    <h4 class="servicios_card__texto">Los BMS (Building Management System) son sistemas
+                    <h3 >BMS Gestion de Edificios</h3>
+                    <h4>Los BMS (Building Management System) son sistemas
                         electronicos/informáticos que controlan,y automatizan los elementos mecánicos, eléctricos y
                         tecnológicos de un edificios, tales
                         como: climatización,
                         iluminación, motorización de consumos (electricidad, gas y agua), sistemas de vigilancia y
                         contraincendios, entre otros.</h4>
-                    <a href="Pages/servicios.html" class="servicios__boton">Ver mas</a>
+                    <a href="Pages/servicios.html">Ver mas</a>
                 </article>
 
                 <article class="servicios_card serv2">
                     <img data-aos="flip-down" data-aos-delay="500" data-aos-duration="2000" class="servicios_card__portada"
                         src="Images/industrial-pc.jpg" alt="Control Industrial">
-                    <h3 class="servicios_card__titulo">Sistema de control Industrial</h3>
-                    <h4 class="servicios_card__texto">El control industrial es la aplicación de diferentes tecnologías
+                    <h3>Sistema de control Industrial</h3>
+                    <h4>El control industrial es la aplicación de diferentes tecnologías
                         para
                         controlar y monitorizar un proceso, máquina o dispositivo que habitualmente cumple funciones o
                         tareas repetitivas, reduciendo al mínimo la intervención humana, pudiendo conseguir que una
                         empresa
                         lleve a cabo su producción de manera óptima y más eficiente.</h4>
-                    <a href="Pages/servicios.html" class="servicios__boton">Ver mas</a>
+                    <a href="Pages/servicios.html">Ver mas</a>
                 </article>
                 <article class="servicios_card serv3">
                     <img data-aos="flip-down" data-aos-delay="1000" data-aos-duration="2000" class="servicios_card__portada" src="Images/ingenieria.jpg" alt="Ingenieria y consultoria">
-                    <h3 class="servicios_card__titulo">Ingenieria y consultoria</h3>
-                    <h4 class="servicios_card__texto">Valoracion del proyecto o la idea que se quiere desarrollar o
+                    <h3>Ingenieria y consultoria</h3>
+                    <h4>Valoracion del proyecto o la idea que se quiere desarrollar o
                         reconducir. Esta tarea incluye, por supuesto, un análisis de la propia compañía, de su
                         funcionamiento y los recursos que tiene disponibles, y sobre todo de la viabilidad de sus planes
                         de
                         ingeniería. Con base en ese diagnóstico, nos encargamos de diseñar la solución más adecuada para
                         cada caso.</h4>
-                    <a href="Pages/servicios.html" class="servicios__boton">Ver mas</a>
+                    <a href="Pages/servicios.html">Ver mas</a>
                 </article>
 
                 <article class="servicios_card serv4">
                     <img data-aos="flip-down" data-aos-delay="1500" data-aos-duration="2000" class="servicios_card__portada" src="Images/scada.jpg" alt="Sistemas SCADA">
                     <h3 class="servicios_card__titulo">Sistemas SCADA</h3>
-                    <h4 class="servicios_card__texto">El control de supervisión y la adquisición de datos (SCADA) es una
+                    <h4>El control de supervisión y la adquisición de datos (SCADA) es una
                         arquitectura de sistema de control que utiliza computadoras, comunicaciones de datos en red e
                         interfaces gráficas de usuario para la gestión de supervisión de procesos de alto nivel. Las
                         interfaces del operador que permiten el monitoreo y la emisión de comandos de proceso se manejan
                         a
                         través del sistema de computadora de supervisión SCADA.</h4>
-                    <a href="Pages/servicios.html" class="servicios__boton">Ver mas</a>
+                    <a href="Pages/servicios.html">Ver mas</a>
                 </article>
             </div>
             <div class="principal__parallax imagenDos">
@@ -134,7 +135,7 @@
                 <div class="footer__menuPrincipal">
                     <div class="footer__titulo">Menu principal</div>
                     <nav class="footer__navegacion">
-                        <a class="footer__items" href="index.html">Inicio</a>
+                        <a id= "currentLink__footer" class="footer__items " href="index.html">Inicio</a>
                         <a class="footer__items" href="Pages/servicios.html">Servicios</a>
                         <a class="footer__items" href="Pages/productos.html">Productos</a>
                         <a class="footer__items" href="Pages/noticias.html">Noticias</a>
@@ -179,5 +180,4 @@
         AOS.init();
     </script>
 </body>
-
 </html>
