@@ -1,0 +1,12 @@
+.index__wrapper {
+    background-color: $my_bgColor;
+    font-family: $my_font;
+    display: grid;
+    grid-template-areas: "header"
+        "servicios"
+        "innovacion"
+        "footer";
+    overflow-x: hidden;
+}
+
+

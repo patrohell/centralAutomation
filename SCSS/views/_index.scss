@@ -1,0 +1,185 @@
+main {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .principal__parallax {
+        position: relative;
+        top: 5vh;
+        width: 100%;
+        height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 50px;
+
+
+        div {
+            text-align: center;
+            position: relative;
+            top: 22vh;
+            left: 40%;
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            color: rgba(255, 250, 250, 0.7);
+            font-size: 1.2rem;
+        }
+    }
+
+    .servicios__titulo {
+        position: relative;
+        top: 15px;
+        padding: 7px;
+        color: rgba(255, 250, 250, 0.7);
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 15px;
+        border: solid;
+        border-color: #ffdb00;
+        border-width: 1px;
+        font-size: 1.2rem;
+    }
+
+    .principal__servicios {
+        width: 96%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: solid rgba(255, 219, 0, 0.2);
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            padding: 20px;
+            margin-top: 10px;
+
+            img {
+                width: 100%;
+                height: 30vh;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-top: 10px;
+                text-align: center;
+                color: rgba(255, 219, 0, 0.6);
+                font-size: 1.7rem;
+            }
+
+            h4 {
+                text-align: justify;
+                margin-top: 10px;
+                height: 220px;
+                color: rgba(255, 250, 250, 0.7);
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                margin-top: 29px;
+                padding: 7px;
+                border: solid rgba(255, 219, 0, 0.6);
+                border-radius: 15px;
+                background-color: rgba(255, 219, 0, 0.1);
+            }
+
+        }
+
+
+    }
+
+    .serv1 {
+        grid-area: serv1;
+
+    }
+
+    .serv2 {
+        grid-area: serv2;
+    }
+
+    .serv3 {
+        grid-area: serv3;
+
+    }
+
+    .serv4 {
+        grid-area: serv4;
+    }
+
+    .imagenUno {
+        background-image: url("../Images/automation.jpg");
+    }
+
+    .imagenDos {
+        background-image: url("../Images/claves-incorporar-innovacion-emp.jpg");
+    }
+}
+
+.innovacion {
+    grid-area: innovacion;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 30px;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        margin-right: 50px;
+        margin-top: 20px;
+
+        img {
+            width: 60%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h3 {
+            margin-top: 10px;
+            text-align: center;
+            color: rgba(255, 219, 0, 0.6);
+            font-size: 1.7rem;
+        }
+
+        h4 {
+            text-align: justify;
+            margin-top: 10px;
+            height: 120px;
+            color: rgba(255, 250, 250, 0.7);
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    }
+
+    .innova1 {
+        grid-area: innova1;
+    }
+
+    .innova2 {
+        grid-area: innova2;
+    }
+
+    .innova3 {
+        grid-area: innova3;
+    }
+
+    .innova4 {
+        grid-area: innova4;
+    }
+
+}

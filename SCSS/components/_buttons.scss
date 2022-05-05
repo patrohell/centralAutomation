@@ -1,0 +1,25 @@
+
+a,a:visited {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 0, 0, 0.7);
+    text-shadow: 0 0 10px red;
+}
+
+
+
+#currentLink {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 139, 139, 0.3);
+}
+
+
+#currentLink__footer {
+    background-color: rgba(0, 139, 139, 0.3);
+    padding-left: 60px;
+    padding-right: 60px;
+}
