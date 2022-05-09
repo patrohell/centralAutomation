@@ -1,84 +1,94 @@
 footer {
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: black;
+    @include flexCenter(column, 15px);
+    align-items: stretch;
     background-image: linear-gradient(black, #1d262d);
     margin-top: 120px;
     padding-bottom: 60px;
 
+
     .footer__main {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flexCenter(row);
+        align-items: stretch;
+        justify-content: space-evenly;
+
+        @include for-size(movil) {
+            @include flexCenter(column, 40px);
+            flex-direction: column-reverse;
+            justify-content: stretch;
+        }
 
         .footer__menuPrincipal {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
+            @include flexCenter(column, 28px);
+
+            @include for-size(movil) {
+                gap: 15px;
+            }
 
             .footer__titulo {
                 font-size: 2.5rem;
                 color: white;
                 margin-top: 25px;
                 text-align: center;
+
+                @include for-size(movil) {
+                    @include reset;
+                }
             }
 
             .footer__navegacion {
-                display: flex;
-                flex-direction: column;
-                margin-top: 25px;
-                justify-content: center;
-                align-items: center;
+                @include flexCenter(column, 3px);
+
+                @include for-size(movil) {
+                    gap: 8px;
+                }
 
                 a {
-                    text-align: left;
-                    padding-right: 15px;
-                    padding-left: 15px;
+                    @include paddingXX(15px);
                     text-decoration: none;
                     font-size: 2.0rem;
-                    padding-top: 2px;
                 }
             }
         }
 
         .footer__redesSociales {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
+            @include flexCenter(column);
 
             .footer__titulo {
                 font-size: 2.5rem;
                 color: white;
                 margin-top: 25px;
                 text-align: center;
+
+                @include for-size(movil) {
+                    @include reset;
+                }
             }
 
             .redesSociales__icono {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-items: center;
+                @include flexCenter(row);
                 margin-top: 50px;
 
+                @include for-size(movil) {
+                    margin-top: 20px;
+                }
+
                 a {
-                    padding-right: 15px;
-                    padding-left: 15px;
+                    @include paddingXX(15px);
                     text-decoration: none;
                     font-size: 2.0rem;
                     padding-top: 2px;
+
+                    @include for-size(movil) {
+                        @include reset;
+                        @include marginXX(15px);
+                    }
                 }
             }
         }
 
         .footer__contacto {
-            direction: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            @include flexCenter(column, 25px);
 
             .footer__titulo {
                 font-size: 2.5rem;
@@ -88,32 +98,35 @@ footer {
             }
 
             .footer__ContactoItmes {
-                text-decoration: none;
-                margin-top: 20px;
-                font-size: 2rem;
-                color: white;
+                @include flexCenter(column, 15px);
+                align-items: stretch;
 
-                a, div {
-                    padding-top: 16px;
-                    padding: 10px;
+                a,
+                div {
+                    font-size: 2rem;
                     text-decoration: none;
+                    color: white;
                 }
             }
         }
     }
 
     .footer__separador {
-        margin-left: 30%;
         width: 50%;
         height: 6px;
+        align-self: center;
         background-color: white;
         border-radius: 20px;
+
+        @include for-size(movil) {
+            @include reset;
+            margin-top: 20px;
+        }
     }
 
     .footer__powered {
         text-align: center;
         color: white;
-        margin-top: 8px;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 }

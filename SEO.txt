@@ -1,0 +1,4 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+Descripción: "Automatizacion industrial basado en electronica, robotica, e informatica."
+Palabras clave: "automatizacion, industrial, electronica, PLC, sensores, actuadores, redes de comunicacion, scada, bms, robotica"
+Encabezado: para el encabezado del h1 utilicé el texto “Central Automation”

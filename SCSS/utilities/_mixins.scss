@@ -1,0 +1,52 @@
+@mixin for-size($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media (max-width: map-get($breakpoints, $size)) {
+            @content;
+        }
+    }
+}
+
+
+@mixin reset() {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@mixin flexCenter($direction, $gap:0px) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin paddingXX($value) {
+    padding-right: $value;
+    padding-left: $value;
+}
+
+@mixin paddingYY($value) {
+    padding-top: $value;
+    padding-bottom: $value;
+}
+
+@mixin marginYY($value){
+    margin-top: $value;
+    margin-bottom: $value;
+}
+
+@mixin marginXX($value){
+    margin-left: $value;
+    margin-right: $value;
+}
+
+
+@mixin parallax() {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
