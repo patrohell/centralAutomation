@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatizacion industrial basado en electronica, robotica, e informatica.">
+    <meta name="keywords" content="Sistemas SCADA, Automation Industrial, ">
     <title>Noticias</title>
     <link rel="icon" type="Images/x-icon" href="../Images/logo_small_icon_only.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
 </head>
 
 <body>
-    <div class="wrapper__noticias">
+    <div class="noticias__wrapper">
         <div class="contenedor__header">
-            <header class="header__logo">
+            <header>
                 <img src="../Images/logo_small_icon.png" alt="Central Automation" width="70" height="70">
                 <h2>Central Automation<span>&#160;</span></h2>
             </header>
-            <nav class="header__navegacion">
+            <nav>
                 <a href="../index.html">Inicio</a>
                 <a href="servicios.html">Servicios</a>
                 <a href="productos.html">Productos</a>
@@ -27,9 +30,9 @@
             </nav>
         </div>
 
-        <img data-aos="flip-left" data-aos-duration="1500" class="noticia_img1" src="../Images/Noticia/ces.jpg"
+        <img class="noticia__img noticia__img--1" data-aos="flip-left" data-aos-duration="1500" src="../Images/Noticia/ces.jpg"
             alt="ces2021">
-        <div class="noticia_text text1">
+        <div class="noticia__grupo noticia__grupo--1">
             <h2>Participacion en CES 2021</h2>
             <p>Este año regresó de forma presencial el CES 2022 a Las Vegas, la feria tecnológica más importante que
                 reunió a más de 40.000 asistentes de cientos de empresas innovadoras para presentar sus nuevos
@@ -40,9 +43,9 @@
                 acuerdo con el sitio del CES.</p>
         </div>
 
-        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="700" class="noticia_img2"
+        <img class="noticia__img noticia__img--2" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="700"
             src="../Images/Noticia/nuevosprod.jpg" alt="nuevos productos">
-        <div class="noticia_text text2">
+        <div class="noticia__grupo noticia__grupo--2">
             <h2>Nuevos Productos</h2>
             <p>El pasado 5 y 6 de Septiembre, en el marco del CATAAR 2022 realizamos el lanzamiento de la nueva línea de
                 actuadores de dampers y válvulas para aire acondicionado de Schneider Electric.
@@ -61,9 +64,9 @@
                 de productos.</p>
         </div>
 
-        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600" class="noticia_img3"
+        <img  class="noticia__img noticia__img--3" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600"
             src="../Images/Noticia/planta.jpg" alt="planta industrial">
-        <div class="noticia_text text3">
+        <div class="noticia__grupo noticia__grupo--3">
             <h2>Inauguramos planta</h2>
             <p>Nuestra nueva planta nos permite ampliar los servicios que podemos ofrecer a nuestros clientes,
                 manteniendo la calidad que nos caracteriza. A través de este cambio y la inversión en investigación y
@@ -79,9 +82,9 @@
         </div>
 
 
-        <img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600" class="noticia_img4"
+        <img class="noticia__img noticia__img--4" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600"
             src="../Images/Noticia/reguladores.jpg" alt="reguladores">
-        <div class="noticia_text text4">
+        <div class="noticia__grupo noticia__grupo--4">
             <h2>Mejoramiento de laboratorios</h2>
             <p>Como parte del desarrollo electrónico que nos caracteriza, en el 2017 ampliamos nuestra línea de
                 reguladores de voltaje, sacándolos con opción IP67 y ATEX los cuales pueden ser utilizados con gases
@@ -95,31 +98,31 @@
                 o corte el voltaje cuando es realmente necesario . </p>
         </div>
 
-        <footer class="footer">
+        <footer>
             <div class="footer__main">
                 <div class="footer__menuPrincipal">
                     <div class="footer__titulo">Menu principal</div>
                     <nav class="footer__navegacion">
-                        <a class="footer__items " href="../index.html">Inicio</a>
-                        <a class="footer__items" href="servicios.html">Servicios</a>
-                        <a class="footer__items" href="productos.html">Productos</a>
-                        <a id= "currentLink__footer" class="footer__items" href="noticias.html">Noticias</a>
-                        <a class="footer__items" href="contacto.html">Contacto</a>
+                        <a href="../index.html">Inicio</a>
+                        <a href="servicios.html">Servicios</a>
+                        <a href="productos.html">Productos</a>
+                        <a id="currentLink__footer" href="noticias.html">Noticias</a>
+                        <a href="contacto.html">Contacto</a>
                     </nav>
                 </div>
 
                 <div class="footer__redesSociales">
                     <div class="footer__titulo">Seguinos</div>
                     <div class="redesSociales__icono">
-                        <a class="redesSociales__item" href="https://www.youtube.com" target="blank"><img
-                                src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png" alt="youtube"
-                                width="50" height="50"></a>
-                        <a class="redesSociales__item" href="https://www.instagram.com" target="blank"><img
-                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
+                        <a href="https://www.youtube.com" target="blank"><img data-aos="fade-left"
+                                data-aos-duration="500" src="../Images/Black-Youtube-logo-with--new-style-vetor-PNG.png"
+                                alt="youtube" width="50" height="50"></a>
+                        <a href="https://www.instagram.com" target="blank"><img data-aos="fade-left"
+                                data-aos-duration="500" data-aos-delay="200"
                                 src="../Images/Instagram-black-and-white-logo-Premium-vector-PNG-.png" alt="instagram"
                                 width="50" height="50"></a>
-                        <a class="redesSociales__item" href="https://www.twitter.com" target="blank"><img
-                                data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
+                        <a href="https://www.twitter.com" target="blank"><img data-aos="fade-left"
+                                data-aos-duration="500" data-aos-delay="500"
                                 src="../Images/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="50"
                                 height="50"></a>
                     </div>
@@ -127,15 +130,16 @@
                 <div class="footer__contacto">
                     <div class="footer__titulo">Contacto</div>
                     <div class="footer__ContactoItmes">
-                        <a class="contacto__item" href="https://goo.gl/maps/4XaPi1iSt2YmeXwE9" target="blank">📌 Tomas
+                        <a href="https://goo.gl/maps/4XaPi1iSt2YmeXwE9" target="blank">📌 Tomas
                             Ordonez 327
                             Cuenca-Ecuador</a>
-                        <div class="contacto__item">📞+59358792726</div>
-                        <a class="contacto__item" href="mailto:info@central-automation.com">📧
+                        <div>📞+59358792726</div>
+                        <a href="mailto:info@central-automation.com">📧
                             info@central-automation.com</a>
                     </div>
                 </div>
             </div>
+
             <div class="footer__separador"></div>
             <div class="footer__powered">
                 &copy powered by: <a href="https://www.edggarstudio.com" target="blank">edggarstudio.com</a>

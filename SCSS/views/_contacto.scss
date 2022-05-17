@@ -1,0 +1,79 @@
+.contacto_img {
+    grid-area: contacto_img;
+    align-self: center;
+    border-radius: 15px;
+    width: 100%;
+
+    @include for-size(movil) {
+        width: 78%;
+        margin: auto;
+    }
+}
+
+
+form {
+    grid-area: contacto_form;
+    margin: auto;
+
+    div {
+        @include flexCenter(column);
+        justify-content: stretch;
+        align-items: start;
+
+        legend {
+            color: rgba(255, 219, 0, 0.6);
+            font-size: 3.5rem;
+            text-align: left;
+        }
+
+        label {
+            color: rgba(255, 219, 0, 0.6);
+            font-size: 2.3rem;
+            margin-top: 20px;
+            @include for-size(movil){
+                font-size: 3rem;
+            }
+        }
+
+        input {
+            background-color: #1d262d;
+            border: solid rgba(255, 219, 0, 0.2);
+            color: white;
+            width: 300px;
+            font-size: 2.3rem;
+            @include for-size(movil) {
+                font-size: 3rem;
+            }
+        }
+
+        textarea {
+            margin-top: 10px;
+            width: 300px;
+            height: 100px;
+            background-color: #1d262d;
+            border: none;
+            color: white;
+            font-size: 2.3rem;
+            @include for-size(movil){
+                font-size: 3rem;
+            }
+        }
+
+        section {
+            @include flexCenter(row);
+            justify-content: stretch;
+            align-items: start;
+            width: 300px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.mapa {
+    grid-area: map;
+    width: 100%;
+
+    iframe {
+        width: 100%;
+    }
+}

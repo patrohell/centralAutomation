@@ -9,4 +9,138 @@
     overflow-x: hidden;
 }
 
+.servicios__wrapper {
+    background-color: $my_bgColor;
+    font-family: $my_font;
+    display: grid;
+    grid-template-areas: "header header header"
+        "img_1 text_1 text_1"
+        "text_2 text_2 img_2"
+        "img_3 text_3 text_3"
+        "text_4 text_4 img_4"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 80px;
+    overflow-x: hidden;
 
+    @include for-size(movil) {
+        grid-template-areas: "header"
+            "img_1"
+            "text_1"
+            "img_2"
+            "text_2"
+            "img_3"
+            "text_3"
+            "img_4"
+            "text_4"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        max-width: 360px;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+
+    }
+}
+
+.productos__wrapper {
+    background-color: $my_bgColor;
+    font-family: $my_font;
+    display: grid;
+    grid-template-areas: "header header header header header header"
+        ". producto--1 producto--2 producto--3 producto--4 ."
+        ". producto--5 producto--6 producto--7 producto--8 ."
+        ". producto--9 producto--10 producto--11 producto--12 ."
+        "footer footer footer footer footer footer"
+    ;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 80px;
+
+    @include for-size(movil) {
+        grid-template-areas: "header"
+            "producto--1"
+            "producto--2"
+            "producto--3"
+            "producto--4"
+            "producto--5"
+            "producto--6"
+            "producto--7"
+            "producto--8"
+            "producto--9"
+            "producto--10"
+            "producto--11"
+            "producto--12"
+            "footer";
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+}
+
+.noticias__wrapper {
+    background-color: $my_bgColor;
+    font-family: $my_font;
+    display: grid;
+    grid-template-areas: "header header header header header header"
+        ". noticia_img1 noticia_text1 noticia_text1 noticia_text1 ."
+        ". noticia_img2 noticia_text2 noticia_text2 noticia_text2 ."
+        ". noticia_img3 noticia_text3 noticia_text3 noticia_text3 ."
+        ". noticia_img4 noticia_text4 noticia_text4 noticia_text4 ."
+        "footer footer footer footer footer footer"
+    ;
+    grid-template-columns: 100px 30% 30% auto auto 100px;
+    grid-row-gap: 80px;
+
+    @include for-size(movil) {
+        grid-template-areas: "header"
+            "noticia_img1"
+            "noticia_text1"
+            "noticia_img2"
+            "noticia_text2"
+            "noticia_img3"
+            "noticia_text3"
+            "noticia_img4"
+            "noticia_text4"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 10px
+    }
+}
+
+.contacto__wrapper {
+    background-color: $my_bgColor;
+    font-family: $my_font;
+    display: grid;
+    grid-template-areas: "header header header header"
+        ". contacto_img contacto_form ."
+        "map map map map"
+        "footer footer footer footer"
+    ;
+    grid-template-columns: 10% repeat(2, 1fr) 10%;
+    grid-row-gap: 80px;
+    grid-column-gap: 80px;
+    overflow-x: hidden;
+
+    @include for-size(movil) {
+        grid-template-areas: "header"
+            "contacto_img"
+            "contacto_form"
+            "map"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 50px
+    }
+}

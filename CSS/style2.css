@@ -98,6 +98,76 @@ html {
   grid-template-areas: "header" "servicios" "innovacion" "footer";
   overflow-x: hidden; }
 
+.servicios__wrapper {
+  background-color: #1d262d;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-areas: "header header header" "img_1 text_1 text_1" "text_2 text_2 img_2" "img_3 text_3 text_3" "text_4 text_4 img_4" "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 80px;
+  overflow-x: hidden; }
+  @media (max-width: 360px) {
+    .servicios__wrapper {
+      grid-template-areas: "header" "img_1" "text_1" "img_2" "text_2" "img_3" "text_3" "img_4" "text_4" "footer";
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+      max-width: 360px;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden; } }
+
+.productos__wrapper {
+  background-color: #1d262d;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-areas: "header header header header header header" ". producto--1 producto--2 producto--3 producto--4 ." ". producto--5 producto--6 producto--7 producto--8 ." ". producto--9 producto--10 producto--11 producto--12 ." "footer footer footer footer footer footer";
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 80px; }
+  @media (max-width: 360px) {
+    .productos__wrapper {
+      grid-template-areas: "header" "producto--1" "producto--2" "producto--3" "producto--4" "producto--5" "producto--6" "producto--7" "producto--8" "producto--9" "producto--10" "producto--11" "producto--12" "footer";
+      grid-template-columns: 1fr;
+      max-width: 360px;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden; } }
+
+.noticias__wrapper {
+  background-color: #1d262d;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-areas: "header header header header header header" ". noticia_img1 noticia_text1 noticia_text1 noticia_text1 ." ". noticia_img2 noticia_text2 noticia_text2 noticia_text2 ." ". noticia_img3 noticia_text3 noticia_text3 noticia_text3 ." ". noticia_img4 noticia_text4 noticia_text4 noticia_text4 ." "footer footer footer footer footer footer";
+  grid-template-columns: 100px 30% 30% auto auto 100px;
+  grid-row-gap: 80px; }
+  @media (max-width: 360px) {
+    .noticias__wrapper {
+      grid-template-areas: "header" "noticia_img1" "noticia_text1" "noticia_img2" "noticia_text2" "noticia_img3" "noticia_text3" "noticia_img4" "noticia_text4" "footer";
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      gap: 10px; } }
+
+.contacto__wrapper {
+  background-color: #1d262d;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-areas: "header header header header" ". contacto_img contacto_form ." "map map map map" "footer footer footer footer";
+  grid-template-columns: 10% repeat(2, 1fr) 10%;
+  grid-row-gap: 80px;
+  grid-column-gap: 80px;
+  overflow-x: hidden; }
+  @media (max-width: 360px) {
+    .contacto__wrapper {
+      grid-template-areas: "header" "contacto_img" "contacto_form" "map" "footer";
+      grid-template-columns: 1fr;
+      grid-row-gap: 40px;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      gap: 50px; } }
+
 footer {
   grid-area: footer;
   display: flex;
@@ -427,3 +497,249 @@ main {
     grid-area: innova3; }
   .innovacion .innova4 {
     grid-area: innova4; }
+
+.servicios__imagen {
+  width: 75%;
+  margin: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  @media (max-width: 360px) {
+    .servicios__imagen {
+      width: 82%; } }
+
+.servicios__grupo h2 {
+  width: 90%;
+  text-align: center;
+  color: rgba(255, 219, 0, 0.6);
+  font-size: 1.9rem;
+  margin: auto;
+  margin-bottom: 15px; }
+  @media (max-width: 360px) {
+    .servicios__grupo h2 {
+      font-size: 2.2rem; } }
+
+.servicios__grupo p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+  text-align: justify;
+  width: 90%;
+  margin: auto; }
+  @media (max-width: 360px) {
+    .servicios__grupo p {
+      font-size: 2rem; } }
+
+.img--1 {
+  grid-area: img_1; }
+
+.grupo--1 {
+  grid-area: text_1; }
+
+.img--2 {
+  grid-area: img_2; }
+
+.grupo--2 {
+  grid-area: text_2; }
+
+.img--3 {
+  grid-area: img_3; }
+
+.grupo--3 {
+  grid-area: text_3; }
+
+.img--4 {
+  grid-area: img_4; }
+
+.grupo--4 {
+  grid-area: text_4; }
+
+.producto__grupo {
+  text-align: center; }
+  .producto__grupo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; }
+  .producto__grupo h2 {
+    color: rgba(255, 219, 0, 0.6);
+    font-size: 2rem;
+    margin-top: 10px; }
+    @media (max-width: 360px) {
+      .producto__grupo h2 {
+        font-size: 2.2rem; } }
+  .producto__grupo p {
+    color: #1ddd4d;
+    font-size: 2rem;
+    margin-top: 3px;
+    margin-bottom: 25px; }
+    @media (max-width: 360px) {
+      .producto__grupo p {
+        font-size: 2.2rem; } }
+  .producto__grupo a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 7px;
+    border: solid rgba(255, 219, 0, 0.6);
+    border-radius: 15px;
+    background-color: rgba(255, 219, 0, 0.1); }
+    @media (max-width: 360px) {
+      .producto__grupo a {
+        font-size: 2rem; } }
+
+.producto--1 {
+  grid-area: producto--1; }
+
+.producto--2 {
+  grid-area: producto--2; }
+
+.producto--3 {
+  grid-area: producto--3; }
+
+.producto--4 {
+  grid-area: producto--4; }
+
+.producto--5 {
+  grid-area: producto--5; }
+
+.producto--6 {
+  grid-area: producto--6; }
+
+.producto--7 {
+  grid-area: producto--7; }
+
+.producto--8 {
+  grid-area: producto--8; }
+
+.producto--9 {
+  grid-area: producto--9; }
+
+.producto--10 {
+  grid-area: producto--10; }
+
+.producto--11 {
+  grid-area: producto--11; }
+
+.producto--12 {
+  grid-area: producto--12; }
+
+.noticia__img {
+  width: 100%;
+  border-radius: 20px;
+  margin: auto; }
+  @media (max-width: 360px) {
+    .noticia__img {
+      width: 82%; } }
+
+.noticia__grupo h2 {
+  color: rgba(255, 219, 0, 0.6);
+  font-size: 2.2rem;
+  text-align: center; }
+
+.noticia__grupo p {
+  color: white;
+  text-align: justify;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 90%;
+  margin: auto; }
+  @media (max-width: 360px) {
+    .noticia__grupo p {
+      font-size: 2rem;
+      margin-top: 20px; } }
+
+.noticia__img--1 {
+  grid-area: noticia_img1; }
+
+.noticia__grupo--1 {
+  grid-area: noticia_text1; }
+
+.noticia__img--2 {
+  grid-area: noticia_img2; }
+
+.noticia__grupo--2 {
+  grid-area: noticia_text2; }
+
+.noticia__img--3 {
+  grid-area: noticia_img3; }
+
+.noticia__grupo--3 {
+  grid-area: noticia_text3; }
+
+.noticia__img--4 {
+  grid-area: noticia_img4; }
+
+.noticia__grupo--4 {
+  grid-area: noticia_text4; }
+
+.contacto_img {
+  grid-area: contacto_img;
+  align-self: center;
+  border-radius: 15px;
+  width: 100%; }
+  @media (max-width: 360px) {
+    .contacto_img {
+      width: 78%;
+      margin: auto; } }
+
+form {
+  grid-area: contacto_form;
+  margin: auto; }
+  form div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 0px;
+    justify-content: stretch;
+    align-items: start; }
+    form div legend {
+      color: rgba(255, 219, 0, 0.6);
+      font-size: 3.5rem;
+      text-align: left; }
+    form div label {
+      color: rgba(255, 219, 0, 0.6);
+      font-size: 2.3rem;
+      margin-top: 20px; }
+      @media (max-width: 360px) {
+        form div label {
+          font-size: 3rem; } }
+    form div input {
+      background-color: #1d262d;
+      border: solid rgba(255, 219, 0, 0.2);
+      color: white;
+      width: 300px;
+      font-size: 2.3rem; }
+      @media (max-width: 360px) {
+        form div input {
+          font-size: 3rem; } }
+    form div textarea {
+      margin-top: 10px;
+      width: 300px;
+      height: 100px;
+      background-color: #1d262d;
+      border: none;
+      color: white;
+      font-size: 2.3rem; }
+      @media (max-width: 360px) {
+        form div textarea {
+          font-size: 3rem; } }
+    form div section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-items: center;
+      align-items: center;
+      gap: 0px;
+      justify-content: stretch;
+      align-items: start;
+      width: 300px;
+      margin-top: 20px; }
+
+.mapa {
+  grid-area: map;
+  width: 100%; }
+  .mapa iframe {
+    width: 100%; }

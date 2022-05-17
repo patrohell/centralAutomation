@@ -1,0 +1,51 @@
+.producto__grupo {
+    text-align: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        color: rgba(255, 219, 0, 0.6);
+        font-size: 2rem;
+        margin-top: 10px;
+
+        @include for-size(movil) {
+            font-size: 2.2rem;
+        }
+    }
+
+    p {
+        color: rgba(29, 221, 77, 1);
+        font-size: 2rem;
+        margin-top: 3px;
+        margin-bottom: 25px;
+
+        @include for-size(movil) {
+            font-size: 2.2rem;
+        }
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 7px;
+        border: solid rgba(255, 219, 0, 0.6);
+        border-radius: 15px;
+        background-color: rgba(255, 219, 0, 0.1);
+
+        @include for-size(movil) {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@for $i from 1 through 12 {
+    .producto--#{$i} {
+        grid-area: producto--#{$i};
+    }
+}
